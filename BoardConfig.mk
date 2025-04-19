@@ -166,7 +166,7 @@ TW_USE_TOOLBOX := true
 
 # TWRP Configuration
 TW_BACKUP_EXCLUSIONS := /Files/fonts
-TW_EXTRA_LANGUAGES := false
+TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_EXCLUDE_APEX := true
@@ -175,9 +175,10 @@ TW_EXCLUDE_LPDUMP := true
 TW_EXCLUDE_SUPERSU := true
 TW_EXCLUDE_BASH := true
 TW_EXCLUDE_TZDATA := true
-TW_EXCLUDE_PYTHON := true
-TW_EXCLUDE_NANO := true
-TW_EXCLUDE_TWRPAPP := true
+TW_INCLUDE_PYTHON := true
+TW_INCLUDE_NANO := true
+TW_INCLUDE_TWRPAPP := true
+TW_DEVICE_VERSION := Build_For_tecno
 
 # Brightness Screen
 TW_NO_SCREEN_BLANK := true
