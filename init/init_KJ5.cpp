@@ -53,7 +53,7 @@ void property_override(string prop, string value)
 
 void vendor_load_properties()
 {
-    string brand = "Redmi";
+    string brand = "Tecno";
     string model;
     string marketname;
 
@@ -65,32 +65,32 @@ void vendor_load_properties()
     property_override("ro.product.device", board);
     property_override("ro.product.vendor.device", board);
 
-    if (board == "xaga") {
-        if (region == "CN") {
-            model = "22041216C";
-            marketname = "Redmi Note 11T Pro";
+    if (board == "KJ5") {
+        if (region == "GB") {
+            model = "KJ5";
+            marketname = "Camon";
         } else {
-            brand = "POCO";
-            model = "22041216G";
-            marketname = "POCO X4 GT";
-            name = "xaga_global";
+            brand = "tecno";
+            model = "KJ5";
+            marketname = "Tecno Camon";
+            name = "KJ5";
         }
-    } else if (board == "xagapro") {
-        if (region == "CN") {
-            model = "22041216UC";
-            marketname = "Redmi Note 11T Pro+";
+    } else if (board == "KJ5") {
+        if (region == "GB") {
+            model = "KJ5";
+            marketname = "Camon 20";
         } else {
-            brand = "POCO";
-            model = "22041216UG";
-            marketname = "POCO X4 GT Pro";
-            name = "xagapro_global";
+            brand = "tecno";
+            model = "KJ5";
+            marketname = "";
+            name = "KJ5_global";
         }
-    } else if (board == "xagain") {
-        model = "22041216I";
-        marketname = "Redmi K50i";
-    } else if (board == "xagaproin") {
-        model = "22041216UI";
-        marketname = "Redmi K50i Pro";
+    } else if (board == "KJ5") {
+        model = "KJ5";
+        marketname = "Tecno Camon";
+    } else if (board == "KJ5") {
+        model = "KJ5";
+        marketname = "Tecno";
     }
 
     // Override all partitions' props
